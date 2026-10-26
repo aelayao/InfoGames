@@ -78,6 +78,13 @@ footer{
     margin: 0;
     
 }
+.sns{
+    border-radius: 20px;
+    padding: 5px;
+    margin: 2px;
+    width: 50px;
+    display: inline;
+}
 
 #nav1:hover{
     color: var(--blanco);
