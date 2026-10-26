@@ -1,0 +1,165 @@
+:root{
+    --rojo:#ff0b67;
+    --rojo_ocs:#800909;
+    --naranja:#fece02;
+    --verde:#30bf3c;
+    /*--verde_grad: linear-gradient(180deg,rgba(48, 191, 60, 1) 60%, rgba(171, 255, 36, 1) 100%);*/
+    --turquesa:#3ee3cd;
+    --azul:#166fd5;
+    --azul_claro:#4290eb;
+    --azul_osc:#204d7f;
+    --blanco:#f5f5f5;
+    --gris_claro:#c0d1e1;
+    --negro:#1e1e2a;
+    --gris_osc:#535263;
+    --gris_m_osc:#282834;
+}
+*{
+    font-family: Arimo;
+    font-size: 18px;
+}
+.margen{
+    margin: auto;
+    padding: 0 2%;
+}
+
+nav{
+    box-shadow: none;
+    height: 120px;
+    /*padding-top: 40px;*/
+    border: 10px solid var(--negro);
+    margin: 0 2%;
+}
+nav a, #text_desc{
+    font-size: 30px;
+    font-family: Arimo Bold;
+    
+}
+#sub_articulos, #sustitulo{
+    font-family: Gaj;
+}
+#sub_articulos{
+    font-size: 80px;
+}
+#principal{
+    padding: 100px 20px 20px 20px;
+    border-radius: 60px;
+    border: 10px solid var(--negro);
+}
+.tarjetas{
+    padding: 20px 10px 30px;
+    border-radius: 40px;
+    margin:0 40px;
+}
+.cont_img{
+    padding: 15px;
+    margin: 20px 15px;
+    border-radius: 40px;
+    background-color: var(--gris_osc);
+    font-size: 18px;
+}
+.link{
+    font-weight: bold;
+    color: var(--azul_osc);
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+#linea_verde{
+    background-color: var(--verde);
+    width: 100%;
+    height: 20px;
+}
+#sustitulo{
+    font-size: 40px;
+}
+footer{
+    padding: 10px;
+    margin: 0;
+    
+}
+
+#nav1:hover{
+    color: var(--blanco);
+    background-color: var(--azul_claro);
+    border-radius: 20px;
+}
+#nav2:hover{
+    color: var(--blanco);
+    background-color: var(--rojo);
+    border-radius: 20px;
+}
+#nav3:hover{
+    color: var(--blanco);
+    background-color: var(--verde);
+    border-radius: 20px;
+}
+.link:hover{
+    color: var(--rojo_ocs);
+}
+aside{
+    border-radius: 60px 0 0 60px;
+}
+#cont_lateral{
+    border-radius: 60px;
+    border: 10px solid var(--negro);
+    padding: 10px 30px;
+}
+
+h2, .subt{
+    font-family: GP;
+    border-radius: 20px;
+    padding: 5px;
+    width: 50%;
+}
+.inpt{
+    background-color: #c5cae9;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    width: 70%;
+    height: 50px;
+}
+.lbl{
+ font-size: 22px;
+ font-weight: bold;
+ color: var(--negro);
+}
+
+.inpt_med{
+    background-color: #c5cae9;
+    border-radius: 20px;
+    border: none;
+    outline: none;
+    padding: 5px 10px;
+    height: 150px;
+}
+.boton{
+    border-radius: 60px;
+    text-align: center;
+    font-family: Gaj;
+    font-size: 32px;
+    border: none;
+    outline: none;
+    padding: 5px 50px;
+    color: var(--negro);
+}
+
+@font-face {
+    font-family: GP;
+    src: url(../fuentes/Game_Paused.otf);
+}
+@font-face {
+    font-family: Arimo;
+    src: url(../fuentes/Arimo/static/Arimo-Regular.ttf);
+}
+@font-face {
+    font-family: Arimo Bold;
+    src: url(../fuentes/Arimo/static/Arimo-Bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: Gaj;
+    src: url(../fuentes/Gajraj_One/GajrajOne-Regular.ttf);
+}
