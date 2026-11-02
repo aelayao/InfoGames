@@ -1,0 +1,311 @@
+@font-face {
+    font-family: 'GP';
+    src: url(../fuentes/Game_Paused.otf);
+}
+@font-face {
+    font-family: 'Arimo';
+    src: url(../fuentes/Arimo/static/Arimo-Regular.ttf);
+}
+@font-face {
+    font-family: Arimo Bold;
+    src: url(../fuentes/Arimo/static/Arimo-Bold.ttf);
+    font-weight: bold;
+}
+@font-face {
+    font-family: 'Gaj';
+    src: url(../fuentes/Gajraj_One/GajrajOne-Regular.ttf);
+}
+
+*{
+    font-family: Arimo;
+    font-size: 18px;
+}
+
+.btn-registro {
+    background-color: #1de9b6;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 70px;
+    font-family: 'GP', monospace;
+    font-size: 18px;
+    color: #000000;
+    cursor: pointer;
+    display: block;
+    margin: 15px 0 15px auto;
+}
+
+.btn-inicio {
+    background-color: #64dd17;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 70px;
+    font-family: 'GP', monospace;
+    font-size: 18px;
+    color: #000000;
+    cursor: pointer;
+    display: block;
+    margin: 15px 0 15px auto;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(180deg, #1976d2 50%, #2979ff 50%);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;  /
+}
+
+footer {
+    background-color: #212121;
+    color: #ffffff;
+    width: 100vw; 
+    position: fixed; 
+    bottom: 0;
+    left: 0;
+    padding: 40px 40px 20px 40px;
+    box-sizing: border-box;
+    z-index: 10;
+    clip-path: polygon(0 55%, 100% 10%, 100% 100%, 0% 100%);
+}
+
+.barra-superior {
+    background-color: #212121;
+    width: 100vw;
+    height: 90px;        
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    clip-path: polygon(0 0, 100% 0, 100% 45%, 0 90%);
+}
+
+.footer-textos {
+    text-align: right;
+    font-family: 'Arimo', sans-serif;
+    font-size: 13px;
+    line-height: 1.3;
+    display: flex;
+    flex-direction: column; 
+    align-items: flex-end;   
+}
+
+.footer-titulo {
+    font-weight: bold;
+    font-size: 15px;
+    margin-bottom: 2px;
+}
+
+.footer-derechos {
+    color: #b0b0b0;
+    margin-top: 4px;
+}
+
+
+#cont_lateral {
+    background-color: #ffffff;
+    border: 9px solid #212121;
+    border-radius: 30px;
+    padding: 20px 40px;
+    width: 950px;
+    max-width: 900%;
+    position: relative;
+    top: 15px;
+    left: -160px; 
+    box-shadow: 0 12px 30px 0 rgba(0, 0, 0, 0.25);
+    box-sizing: border-box;
+    z-index: 100;
+}
+
+
+.header-contenedor {
+  position: relative;
+  width: 170%;
+  max-width: 1500px;
+  margin: -150px auto 0 auto;
+  z-index: 100;
+  box-sizing: border-box;
+}
+
+.barra-amarilla {
+  background-color: #fdd835;
+  border: 8px solid #212121;
+  height: 135px;
+  width: 100%;
+  position: relative;
+  margin-top: -18px;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 25px;
+}
+
+
+.vidas-container {
+    position: absolute;
+    top: -22px;          
+    left: 30px;          
+    background-color: #ffffff;
+    border: 5px solid #1e2230;
+    padding: 8px 8px;
+    display: flex;
+    gap: 6px;
+    z-index: 999;    
+}
+
+.icono-corazon {
+  width: 24px;
+  height: auto;
+  display: block;
+}
+
+.logo-link {
+    position: absolute;  
+    top: 6px;            
+    right: 30px;         
+    z-index: 20;         
+    display: inline-block;
+    text-decoration: none;
+}
+
+.logo-img {
+  width: 340px;
+  height: auto;
+  display: block;
+  margin-right: -10px;
+}
+
+.img-consola1 {
+    position: absolute;
+    right: 295px; 
+    top: 220px;    
+    z-index: 150;
+}
+
+.imagen-lateral-consolas-verde {
+    width: 320px;  
+    height: auto;
+}
+
+.img-consola2 {
+    position: absolute;
+    right: 295px; 
+    top: 220px;    
+    z-index: 150;
+}
+
+.imagen-lateral-consolas-amarilla {
+    width: 320px;  
+    height: auto;
+    
+}
+
+#cont_lateral h2 {
+    font-family: 'GP', sans-serif;
+    font-size: 2.1rem;      
+    color: #212121;
+    margin-bottom: 10px;    
+}
+
+#cont_lateral label,
+#cont_lateral p,
+#cont_lateral form {
+    font-family: 'Arimo', sans-serif;
+    font-weight: bold;
+    font-size: 0.9rem;      
+    color: #212121;
+}
+
+#cont_lateral input[type="text"],
+#cont_lateral input[type="password"],
+#cont_lateral input[type="email"] {
+    font-family: 'Arimo', sans-serif;
+    width: 100%;
+    max-width: 700px;
+    padding: 15px 20px;      
+    background-color: #cbe0f0;
+    border: none;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    outline: none;
+    box-sizing: border-box;
+    display: block;
+    margin-top: 4px;
+    margin-bottom: 8px;     
+}
+
+#cont_lateral a,
+#cont_lateral .enlace-login {
+    font-family: 'Arimo', sans-serif;
+    color: #e91e63;
+    font-weight: bold;
+    text-decoration: none;
+    display: block;
+    margin-top: 8px;
+    font-size: 0.9rem;
+    text-align: right;      
+    margin-left: auto;      
+    margin-right: 0;
+}
+
+/*TODO LO DE ARRIBA ES PROTOTIPO DE REGISTRO Y SESION, SE MODIFICARA DEACUERDO A MATERIALIZE*/
+
+/*APARTIR DE AHORA ES DE PERFIL*/
+
+.btn-actualizar {
+    background-color: #1de9b6;
+    border: none;
+    border-radius: 25px;
+    padding: 15px 70px;
+    font-family: 'GP', monospace;
+    font-size: 18px;
+    color: #000000;
+    cursor: pointer;
+    display: block;
+    margin: 15px 0 15px auto;
+}
+
+#cont_lateral.perfil-box {
+    position: relative;
+    width: 950px; 
+}
+
+#cont_lateral.perfil-box {
+    width: 950px;
+    padding: 40px 50px;       
+    min-height: 380px;         
+    position: relative;
+}
+
+#cont_lateral.perfil-box {
+    position: relative;
+    width: 950px;
+    padding: 35px 280px 35px 40px;
+    min-height: 380px;
+    margin-left: 400px; 
+    margin-top: 20px;
+}
+
+#cont_lateral.perfil-box .imagen-lateral-foto {
+    position: absolute;
+    right: 40px;
+    top: 35px;
+    width: 210px;
+    border-radius: 15px;
+}
+
+#cont_lateral.perfil-box .btn-actualizar {
+    display: block;
+    margin-left: auto;  
+    margin-right: -250px;
+}
+
+#cont_lateral.perfil-box ~ .img-consola1, 
+body:has(#cont_lateral.perfil-box) .img-consola1 {
+    right: 1230px;
+}
